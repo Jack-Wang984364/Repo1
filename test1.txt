@@ -1,7 +1,18 @@
-GIT = DVCS
+1. How to enable git commands autocomplete feature on macOS
+2. How to enable git commands color features on macOS
 
-GIT HUB - website to upload your repositories online
-        - provides backup
-        - provides visual interface to your repositories
-        - makes collaboration easier
-123456
+For autocomplete
+
+Step1: put git-completion.bash script to your home dir.
+curl https://raw.githubusercontent.com/git... -o ~/.git-completion.bash
+
+Step2: add following to .bash_profile. This tells .bash to run git-completion.bash script if exists.
+vi ~/.bash_profile
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+
+Step 1: Create branch
+	git branch "branch name"
